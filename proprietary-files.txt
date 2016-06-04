@@ -1266,24 +1266,16 @@ vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/lowirpcd
 vendor/bin/mlid
 vendor/bin/xtra-daemon
-vendor/bin/xtwifi-client
-vendor/bin/xtwifi-inet-agent
-vendor/etc/cacert_location.pem
 vendor/etc/gps_diag.cfg
 vendor/etc/init/loc-launcher.rc
 vendor/etc/init/vendor.wlan.lowirpcd.rc
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
-vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
 vendor/lib64/libMiVDR.so
-vendor/lib64/libasn1cper.so
-vendor/lib64/libasn1crt.so
-vendor/lib64/libasn1crtx.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
-vendor/lib64/libgdtap.so
 vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
 vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so;FIX_SONAME
@@ -1311,8 +1303,6 @@ vendor/lib64/libqppe.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_server_protocol.so
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so
 vendor/lib64/vendor.qti.gnss-V3-ndk_platform.so
 vendor/lib64/vendor.qti.gnss-service.so
 
