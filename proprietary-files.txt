@@ -120,7 +120,6 @@ vendor/lib64/libxlog.so
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libshoebox.so
 
 # Batterysecret
