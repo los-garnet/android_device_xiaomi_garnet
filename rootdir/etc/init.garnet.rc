@@ -82,6 +82,9 @@ on property:ro.boot.product.hardware.sku=JP
 on property:sys.boot_completed=1
     write /sys/devices/virtual/thermal/thermal_message/sconfig 20
 
+on property:persist.sys.xtra-daemon.enabled=*
+    restart loc_launcher
+
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
