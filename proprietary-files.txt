@@ -93,7 +93,7 @@ vendor/firmware/fs19xx.fsm
 # Audio graph manager
 vendor/lib64/libagm.so
 vendor/lib64/libmisight.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;DISABLE_CHECKELF
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
@@ -101,7 +101,7 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.parrot.so
+vendor/lib64/hw/audio.primary.parrot.so;DISABLE_CHECKELF
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
@@ -114,17 +114,17 @@ vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libawcal.so
+vendor/lib64/libawcal.so;DISABLE_CHECKELF
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libfsalgocal.so
-vendor/lib64/libkaraokepal.so
+vendor/lib64/libfsalgocal.so;DISABLE_CHECKELF
+vendor/lib64/libkaraokepal.so;DISABLE_CHECKELF
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
-vendor/lib64/libmcs.so
+vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libmispowerop.so
-vendor/lib64/libqtigefar.so
+vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 vendor/lib64/libresampler.so
 vendor/lib64/libxlog.so
 
@@ -823,7 +823,7 @@ vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/libAF.so
 vendor/lib64/libHISCppAlgos.so
 vendor/lib64/libMiMotion.so
-vendor/lib64/libMiVideoFilter.so
+vendor/lib64/libMiVideoFilter.so;DISABLE_CHECKELF
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSnpeDspV65Stub.so
@@ -833,14 +833,12 @@ vendor/lib64/libSnpeHtpPrepare.so
 vendor/lib64/libSnpeHtpV68Stub.so
 vendor/lib64/libSnpeHtpV69Stub.so
 vendor/lib64/libSnpeHtpV73Stub.so
-vendor/lib64/libTrueSight.so
+vendor/lib64/libTrueSight.so;DISABLE_CHECKELF
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so
-vendor/lib64/libalLDC_p.so
-vendor/lib64/libalhLDC.so
-vendor/lib64/libalhLDC_p.so
+vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
 vendor/lib64/libarcsoft_beautyshot.so
@@ -869,7 +867,7 @@ vendor/lib64/libcamxfdalgo.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamximageformatutils.so;DISABLE_CHECKELF
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
 vendor/lib64/libcamxstatscore.so
@@ -927,7 +925,7 @@ vendor/lib64/libmmcamera_lut2d.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libmorpho_ubwc.so
+vendor/lib64/libmorpho_ubwc.so;DISABLE_CHECKELF
 vendor/lib64/libmorpho_video_stabilizer.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libomp.so
@@ -1274,7 +1272,7 @@ vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
 vendor/bin/garden_app
-vendor/bin/hw/android.hardware.gnss-aidl-service-qti
+vendor/bin/hw/android.hardware.gnss-aidl-service-qti;DISABLE_CHECKELF
 vendor/bin/loc_launcher
 vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/lowirpcd
@@ -1305,7 +1303,7 @@ vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
-vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so;DISABLE_CHECKELF
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/libMiVDR.so
 vendor/lib64/libasn1cper.so
@@ -1317,8 +1315,8 @@ vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
-vendor/lib64/libgarden.so
-vendor/lib64/libgarden_haltests_e2e.so
+vendor/lib64/libgarden.so;DISABLE_CHECKELF
+vendor/lib64/libgarden_haltests_e2e.so;DISABLE_CHECKELF
 vendor/lib64/libgdtap.so
 vendor/lib64/libgeofencing.so
 vendor/lib64/libgnss.so
@@ -1591,12 +1589,12 @@ vendor/lib64/libQnnChrometraceProfilingReader.so
 vendor/lib64/libQnnCpu.so
 vendor/lib64/libQnnDsp.so
 vendor/lib64/libQnnDspNetRunExtensions.so
-vendor/lib64/libQnnDspV65CalculatorStub.so
+vendor/lib64/libQnnDspV65CalculatorStub.so;DISABLE_CHECKELF
 vendor/lib64/libQnnDspV65Stub.so
-vendor/lib64/libQnnDspV65StubInternal.so
+vendor/lib64/libQnnDspV65StubInternal.so;DISABLE_CHECKELF
 vendor/lib64/libQnnDspV66CalculatorStub.so
 vendor/lib64/libQnnDspV66Stub.so
-vendor/lib64/libQnnDspV66StubInternal.so
+vendor/lib64/libQnnDspV66StubInternal.so;DISABLE_CHECKELF
 vendor/lib64/libQnnGpu.so
 vendor/lib64/libQnnGpuNetRunExtensions.so
 vendor/lib64/libQnnGpuProfilingReader.so
