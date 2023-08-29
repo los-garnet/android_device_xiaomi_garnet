@@ -87,7 +87,7 @@ vendor/firmware/fs19xx.fsm
 # Audio graph manager
 vendor/lib64/libagm.so
 vendor/lib64/libmisight.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;DISABLE_CHECKELF
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
@@ -102,22 +102,22 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so
+vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libawcal.so
+vendor/lib64/libawcal.so;DISABLE_CHECKELF
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libfsalgocal.so
+vendor/lib64/libfsalgocal.so;DISABLE_CHECKELF
 vendor/lib64/libkaraokepal.so;DISABLE_CHECKELF
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
-vendor/lib64/libmcs.so
+vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libmispowerop.so
-vendor/lib64/libqtigefar.so
+vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 vendor/lib64/libresampler.so
 vendor/lib64/libxlog.so
 
@@ -165,7 +165,7 @@ vendor/lib64/libsysmon_cdsp_skel.so
 # CNE
 vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
-vendor/bin/qms
+vendor/bin/qms;DISABLE_CHECKELF
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
@@ -200,11 +200,11 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/qms.rc
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
-vendor/lib64/libmasc.so
+vendor/lib64/libmasc.so;DISABLE_CHECKELF
 vendor/lib64/libqms_client.so
 vendor/lib64/libshsc.so
 vendor/lib64/libwms.so
@@ -816,7 +816,7 @@ vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/libAF.so
 vendor/lib64/libHISCppAlgos.so
 vendor/lib64/libMiMotion.so
-vendor/lib64/libMiVideoFilter.so
+vendor/lib64/libMiVideoFilter.so;DISABLE_CHECKELF
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSnpeDspV65Stub.so
@@ -826,14 +826,12 @@ vendor/lib64/libSnpeHtpPrepare.so
 vendor/lib64/libSnpeHtpV68Stub.so
 vendor/lib64/libSnpeHtpV69Stub.so
 vendor/lib64/libSnpeHtpV73Stub.so
-vendor/lib64/libTrueSight.so
+vendor/lib64/libTrueSight.so;DISABLE_CHECKELF
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so
-vendor/lib64/libalLDC_p.so
-vendor/lib64/libalhLDC.so
-vendor/lib64/libalhLDC_p.so
+vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
 vendor/lib64/libarcsoft_beautyshot.so
@@ -862,7 +860,7 @@ vendor/lib64/libcamxfdalgo.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamximageformatutils.so;DISABLE_CHECKELF
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
 vendor/lib64/libcamxstatscore.so
@@ -920,7 +918,7 @@ vendor/lib64/libmmcamera_lut2d.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libmorpho_ubwc.so
+vendor/lib64/libmorpho_ubwc.so;DISABLE_CHECKELF
 vendor/lib64/libmorpho_video_stabilizer.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libomp.so
@@ -1258,8 +1256,6 @@ my_bigball/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/pe
 my_bigball/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|4fb8d8ab0e1dbda1582361f48395f819367edb0a
 
 # Fingerprint
-odm/lib/hw/fingerprint.fpc_fod.so:odm/lib/hw/fingerprint.fpc_fod.default.so
-odm/lib/hw/fingerprint.goodix_fod.so:odm/lib/hw/fingerprint.goodix_fod.default.so
 odm/lib/libgf_hal.so
 odm/lib64/hw/fingerprint.fpc_fod.so:odm/lib64/hw/fingerprint.fpc_fod.default.so
 odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so
@@ -1270,12 +1266,11 @@ vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
 vendor/bin/garden_app
-vendor/bin/hw/android.hardware.gnss-aidl-service-qti
+vendor/bin/hw/android.hardware.gnss-aidl-service-qti;DISABLE_CHECKELF
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/lowirpcd
 vendor/bin/mlid
-vendor/bin/qcc-trd
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
@@ -1301,7 +1296,7 @@ vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
-vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so;DISABLE_CHECKELF
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/libMiVDR.so
 vendor/lib64/libasn1cper.so
@@ -1313,8 +1308,8 @@ vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
-vendor/lib64/libgarden.so
-vendor/lib64/libgarden_haltests_e2e.so
+vendor/lib64/libgarden.so;DISABLE_CHECKELF
+vendor/lib64/libgarden_haltests_e2e.so;DISABLE_CHECKELF
 vendor/lib64/libgdtap.so
 vendor/lib64/libgeofencing.so
 vendor/lib64/libgnss.so
@@ -1465,7 +1460,7 @@ vendor/lib64/vendor.qti.hardware.limits@1.0.so
 vendor/lib64/vendor.qti.hardware.limits@1.1.so
 
 # Listen
-vendor/lib64/hw/sound_trigger.primary.parrot.so
+vendor/lib64/hw/sound_trigger.primary.parrot.so;DISABLE_CHECKELF
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
 vendor/lib64/liblistensoundmodel2vendor.so
@@ -1493,7 +1488,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
@@ -1519,18 +1514,18 @@ vendor/etc/dolby/dax-default.xml|ed462fc232f09bd2caca3a4e1875a45d47f6b63b
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|05ae03d6fb9ee3a601545113ff1c89c549e3b5cb
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
-vendor/lib64/libcodec2_soft_ac4dec.so|bc4d4a81c88d58b86d79f28405998a59e863493f
-vendor/lib64/libcodec2_soft_ddpdec.so|18dde1c96a1e82b9c47c4b38e756a98d24f501ac
+vendor/lib64/libcodec2_soft_ac4dec.so;DISABLE_CHECKELF|bc4d4a81c88d58b86d79f28405998a59e863493f
+vendor/lib64/libcodec2_soft_ddpdec.so;DISABLE_CHECKELF|18dde1c96a1e82b9c47c4b38e756a98d24f501ac
 vendor/lib64/libcodec2_store_dolby.so|3749d05dc119cd7c06d536cafbe7a79101386bec
 vendor/lib64/libdapparamstorage.so|122582222b40a974f9c9bb3b3f268123ff052ba1
 vendor/lib64/libdeccfg.so|cc268f0a323b162450d3ad6941e9b1c7954a3a31
 vendor/lib64/libdlbdsservice.so|79f28068990457247c6cbdb582768f631062dfa4
 vendor/lib64/libdlbpreg.so|42657310ed4b6fe69ba3805005d5a022dac86b91
-vendor/lib64/libspatializerparamstorage.so|12acd14beacfa2e22015e4a9b21dd6cb8c026d4d
+vendor/lib64/libspatializerparamstorage.so;DISABLE_CHECKELF|12acd14beacfa2e22015e4a9b21dd6cb8c026d4d
 vendor/lib64/soundfx/libdlbvol.so|8ef979e2d0768fd1f1cc1b88b2c6c5e03d57600c
 vendor/lib64/soundfx/libhwdap.so|e4f7c9bc2fac777642ca5f6089d60412198b293e
 vendor/lib64/soundfx/libswgamedap.so|7e2a69c32d2af7cc817f910e7147114aa268dbc5
-vendor/lib64/soundfx/libswspatializer.so|4156088e5c7cd76bfae9b37454d6918ec80d4b8d
+vendor/lib64/soundfx/libswspatializer.so;DISABLE_CHECKELF|4156088e5c7cd76bfae9b37454d6918ec80d4b8d
 vendor/lib64/soundfx/libswvqe.so|ecad3cb1b52adcf1572b25f33f3ca23bd1053e9d
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|60104a214265522f2163838279678ae1f66b90fc
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|240a515a19ed9e51e0e92d7f99eccd9218c1f61e
@@ -1618,12 +1613,12 @@ vendor/lib64/libQnnChrometraceProfilingReader.so
 vendor/lib64/libQnnCpu.so
 vendor/lib64/libQnnDsp.so
 vendor/lib64/libQnnDspNetRunExtensions.so
-vendor/lib64/libQnnDspV65CalculatorStub.so
+vendor/lib64/libQnnDspV65CalculatorStub.so;DISABLE_CHECKELF
 vendor/lib64/libQnnDspV65Stub.so
-vendor/lib64/libQnnDspV65StubInternal.so
+vendor/lib64/libQnnDspV65StubInternal.so;DISABLE_CHECKELF
 vendor/lib64/libQnnDspV66CalculatorStub.so
 vendor/lib64/libQnnDspV66Stub.so
-vendor/lib64/libQnnDspV66StubInternal.so
+vendor/lib64/libQnnDspV66StubInternal.so;DISABLE_CHECKELF
 vendor/lib64/libQnnGpu.so
 vendor/lib64/libQnnGpuNetRunExtensions.so
 vendor/lib64/libQnnGpuProfilingReader.so
