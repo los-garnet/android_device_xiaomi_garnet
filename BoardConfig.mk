@@ -59,6 +59,10 @@ TARGET_SCREEN_DENSITY := 480
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+$(call soong_config_set, qtilocation, feature_nhz, false)
+
 # Hardware
 BOARD_USES_QCOM_HARDWARE := true
 
