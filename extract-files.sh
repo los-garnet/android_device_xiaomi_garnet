@@ -31,12 +31,16 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
+ONLY_FIRMWARE=
 KANG=
 SECTION=
 CARRIER_SKIP_FILES=()
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
+        --only-firmware )
+            ONLY_FIRMWARE=true
+            ;;
         -n | --no-cleanup)
             CLEAN_VENDOR=false
             ;;
@@ -120,9 +124,19 @@ function blob_fixup_dry() {
     blob_fixup "$1" ""
 }
 
+function prepare_firmware() {
+    :
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+if [ -z "${ONLY_FIRMWARE}" ]; then
+    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+fi
+
+if [ -z "${SECTION}" ]; then
+    extract_firmware "${MY_DIR}/proprietary-firmware.txt" "${SRC}"
+fi
 
 "${MY_DIR}/setup-makefiles.sh"
