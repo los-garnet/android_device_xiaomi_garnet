@@ -271,6 +271,7 @@ PRODUCT_PACKAGES += \
     init.garnet.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
+    init.sim.restart.sh \
     init.target.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
