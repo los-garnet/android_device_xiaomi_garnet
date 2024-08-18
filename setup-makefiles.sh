@@ -51,6 +51,14 @@ function lib_to_package_fixup_vendor_variants() {
         vendor.qti.imsrtpservice@3.0)
             echo "$1-vendor"
             ;;
+        libagm | \
+        libagmclient | \
+        libagmmixer | \
+        libar-pal | \
+        libpalclient | \
+	libwpa_client | \
+        vendor.qti.hardware.pal@1.0-impl)
+	    ;;
         *)
             return 1
     esac
