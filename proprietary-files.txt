@@ -85,9 +85,9 @@ vendor/firmware/aw882xx_acf.bin
 vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
--vendor/lib64/libagm.so
+vendor/lib64/libagm.so
 vendor/lib64/libmisight.so
--vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
@@ -103,7 +103,7 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
--vendor/lib64/libar-pal.so
+vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
