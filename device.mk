@@ -511,7 +511,8 @@ PRODUCT_COPY_FILES += \
 # Thermal
 ifeq ($(TARGET_USE_QTI_THERMAL_SERVICE),true)
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.qti
+    android.hardware.thermal-service.qti \
+    android.hardware.thermal@2.0
 endif
 
 # Touchscreen
