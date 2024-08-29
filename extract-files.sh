@@ -66,7 +66,9 @@ function blob_fixup() {
             ${PATCHELF} --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib64/libqtikeymint.so)
-            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "${2}"
+            "${PATCHELF_0_17_2}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
+            "${PATCHELF_0_17_2}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             grep -q "android.hardware.security.rkp-V1-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "android.hardware.security.rkp-V1-ndk.so" "${2}"
             ;;
         vendor/etc/camera/pureView_parameter.xml)
