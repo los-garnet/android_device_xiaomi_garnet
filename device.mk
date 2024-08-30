@@ -247,9 +247,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libOmxCore
-
-PRODUCT_PACKAGES += \
     libavservices_minijail
 
 PRODUCT_COPY_FILES += \
