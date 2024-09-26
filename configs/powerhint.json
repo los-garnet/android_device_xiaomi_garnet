@@ -220,21 +220,21 @@
     },
     {
       "Name": "L3LittleClusterMinFreq",
-      "Path": "/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:ddr:silver/min_freq",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:silver/min_freq",
       "Values": [
-        "1804",
-        "1632",
-        "499"
+        "1440000",
+        "1305600",
+        "307200"
       ],
       "ResetOnInit": true
     },
     {
       "Name": "L3BigClusterMinFreq",
-      "Path": "/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:ddr:gold/min_freq",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:gold/min_freq",
       "Values": [
-        "2208",
-        "2054",
-        "691"
+        "1440000",
+        "1401600",
+        "307200"
       ],
       "ResetOnInit": true
     },
@@ -433,13 +433,13 @@
       "PowerHint": "LAUNCH",
       "Node": "L3LittleClusterMinFreq",
       "Duration": 5000,
-      "Value": "1804"
+      "Value": "1440000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3BigClusterMinFreq",
       "Duration": 5000,
-      "Value": "2208"
+      "Value": "1440000"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
