@@ -73,6 +73,10 @@ function blob_fixup() {
             "${PATCHELF_0_17_2}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             grep -q "android.hardware.security.rkp-V1-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "android.hardware.security.rkp-V1-ndk.so" "${2}"
             ;;
+        vendor/bin/qcc-trd)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "libgrpc++_unsecure.so" "libgrpc++_unsecure_prebuilt.so" "${2}"
+            ;;
         vendor/etc/camera/pureView_parameter.xml)
             [ "$2" = "" ] && return 0
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
@@ -96,6 +100,10 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
             [ "$2" = "" ] && return 0
             sed -ni '/dolby/!p' "${2}"
+            ;;
+        vendor/lib64/libgrpc++_unsecure_prebuilt.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname "libgrpc++_unsecure_prebuilt.so" "${2}"
             ;;
         vendor/lib64/vendor.libdpmframework.so)
             [ "$2" = "" ] && return 0
