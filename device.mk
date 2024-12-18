@@ -519,6 +519,9 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# UDFPS
+TARGET_HAS_UDFPS := true
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
