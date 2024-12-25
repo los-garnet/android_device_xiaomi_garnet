@@ -937,6 +937,7 @@ vendor/lib64/libquickcamera.so
 vendor/lib64/librelight_only.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
+vendor/lib64/libdlrmsc.so
 vendor/lib64/libsfeShiftExtrapolation.so
 vendor/lib64/libsupermoon.so
 vendor/lib64/libswregistrationalgo.so
