@@ -61,6 +61,7 @@ lib_fixups: lib_fixups_user_type = {
         'libpalclient',
 	'libwpa_client',
         'vendor.qti.hardware.pal@1.0-impl',
+        'vendor.qti.qccvndhal_aidl-v1-ndk',
     ): lib_fixup_remove,
 }
 
