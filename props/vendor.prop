@@ -175,7 +175,6 @@ debug.c2.use_dmabufheaps=1
 debug.config.media.video.dolby_vision_suports=true
 debug.stagefright.c2inputsurface=-1
 ro.media.xml_variant.profiles=_parrot_v0
-vendor.media.omx=0
 
 # NFC
 ro.vendor.nfc.debounce_field_on=1
