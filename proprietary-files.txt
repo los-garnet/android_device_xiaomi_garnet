@@ -72,12 +72,6 @@ vendor/lib/rfsa/adsp/misound_res_spk_fs.bin
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio configs
-vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml
-vendor/etc/audio_policy_engine_default_stream_volumes.xml
-vendor/etc/audio_policy_engine_product_strategies.xml
-vendor/etc/audio_policy_engine_stream_volumes.xml
-
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
 vendor/firmware/fs19xx.fsm
@@ -1504,29 +1498,6 @@ vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
-
-# Media (Dolby Audio) - from nuwa HyperOS 1.0.12.0.UMBMIXM
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|67be4fdc6e15b56e4ebd74f7a50b34d8d1e4209b
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service|4a88666d7f072ce6ba4147198fe3aee1eebf1481
-vendor/etc/dolby/dax-default.xml|ed462fc232f09bd2caca3a4e1875a45d47f6b63b
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|05ae03d6fb9ee3a601545113ff1c89c549e3b5cb
-vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
-vendor/lib64/libcodec2_soft_ac4dec.so;DISABLE_CHECKELF|bc4d4a81c88d58b86d79f28405998a59e863493f
-vendor/lib64/libcodec2_soft_ddpdec.so;DISABLE_CHECKELF|18dde1c96a1e82b9c47c4b38e756a98d24f501ac
-vendor/lib64/libcodec2_store_dolby.so|3749d05dc119cd7c06d536cafbe7a79101386bec
-vendor/lib64/libdapparamstorage.so|122582222b40a974f9c9bb3b3f268123ff052ba1
-vendor/lib64/libdeccfg.so|cc268f0a323b162450d3ad6941e9b1c7954a3a31
-vendor/lib64/libdlbdsservice.so|79f28068990457247c6cbdb582768f631062dfa4
-vendor/lib64/libdlbpreg.so|42657310ed4b6fe69ba3805005d5a022dac86b91
-vendor/lib64/libspatializerparamstorage.so;DISABLE_CHECKELF|12acd14beacfa2e22015e4a9b21dd6cb8c026d4d
-vendor/lib64/soundfx/libdlbvol.so|8ef979e2d0768fd1f1cc1b88b2c6c5e03d57600c
-vendor/lib64/soundfx/libhwdap.so|e4f7c9bc2fac777642ca5f6089d60412198b293e
-vendor/lib64/soundfx/libswgamedap.so|7e2a69c32d2af7cc817f910e7147114aa268dbc5
-vendor/lib64/soundfx/libswspatializer.so;DISABLE_CHECKELF|4156088e5c7cd76bfae9b37454d6918ec80d4b8d
-vendor/lib64/soundfx/libswvqe.so|ecad3cb1b52adcf1572b25f33f3ca23bd1053e9d
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|60104a214265522f2163838279678ae1f66b90fc
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|240a515a19ed9e51e0e92d7f99eccd9218c1f61e
 
 # Media Config
 vendor/etc/media_codecs_parrot_v0.xml

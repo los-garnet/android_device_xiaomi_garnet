@@ -81,9 +81,8 @@
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="hifi_playback" role="source" />
-                <mixPort name="spatial output" role="source" flags="AUDIO_OUTPUT_FLAG_SPATIALIZER">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                <mixPort name="compress_passthrough" role="source"
+                        flags="AUDIO_OUTPUT_FLAG_DIRECT AUDIO_OUTPUT_FLAG_COMPRESS_OFFLOAD AUDIO_OUTPUT_FLAG_NON_BLOCKING">
                 </mixPort>
                 <mixPort name="direct_pcm" role="source"
                         flags="AUDIO_OUTPUT_FLAG_DIRECT">
@@ -214,7 +213,7 @@
                 <!-- Output devices declaration, i.e. Sink DEVICE PORT -->
                 <devicePort tagName="Earpiece" type="AUDIO_DEVICE_OUT_EARPIECE" role="sink">
                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                            samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_MONO"/>
+                            samplingRates="48000" channelMasks="AUDIO_CHANNEL_IN_MONO"/>
                 </devicePort>
                 <devicePort tagName="Speaker" role="sink" type="AUDIO_DEVICE_OUT_SPEAKER" address="">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -302,24 +301,6 @@
                 </devicePort>
                 <devicePort tagName="USB Headset In" type="AUDIO_DEVICE_IN_USB_HEADSET" role="source">
                 </devicePort>
-
-                <!-- Custom Bluetooth Ports Declarations for Dolby Processing -->
-                <devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink"
-                            encodedFormats="AUDIO_FORMAT_LDAC AUDIO_FORMAT_APTX AUDIO_FORMAT_APTX_HD AUDIO_FORMAT_AAC AUDIO_FORMAT_SBC">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100,48000,88200,96000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
-                </devicePort>
-                <devicePort tagName="BT A2DP Headphones" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" role="sink"
-                            encodedFormats="AUDIO_FORMAT_LDAC AUDIO_FORMAT_APTX AUDIO_FORMAT_APTX_HD AUDIO_FORMAT_AAC AUDIO_FORMAT_SBC">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100,48000,88200,96000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
-                </devicePort>
-                <devicePort tagName="BT A2DP Speaker" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER" role="sink"
-                            encodedFormats="AUDIO_FORMAT_LDAC AUDIO_FORMAT_APTX AUDIO_FORMAT_APTX_HD AUDIO_FORMAT_AAC AUDIO_FORMAT_SBC">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100,48000,88200,96000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
-                </devicePort>
-
             </devicePorts>
             <!-- route declaration, i.e. list all available sources for a given sink -->
             <routes>
@@ -334,7 +315,7 @@
                 <route type="mix" sink="Line"
                        sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output"/>
                 <route type="mix" sink="HDMI"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
+                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,compress_passthrough,voip_rx"/>
                 <route type="mix" sink="Proxy"
                        sources="primary output,deep_buffer,direct_pcm,compressed_offload"/>
                 <route type="mix" sink="FM"
@@ -348,7 +329,7 @@
                 <route type="mix" sink="USB Device Out"
                        sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,hifi_playback"/>
                 <route type="mix" sink="USB Headset Out"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,hifi_playback,spatial output"/>
+                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,hifi_playback"/>
                 <route type="mix" sink="Telephony Tx"
                        sources="voice_tx,incall_music_uplink"/>
                 <route type="mix" sink="voice_rx"
@@ -368,14 +349,6 @@
                 <route type="mix" sink="mmap_no_irq_in"
                        sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,USB Device In,USB Headset In"/>
                 <route type="mix" sink="hifi_input" sources="USB Device In,USB Headset In" />
-
-                <!-- Custom Bluetooth Routes Declaration for Dolby Processing -->
-                <route type="mix" sink="BT A2DP Out"
-                       sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
-                <route type="mix" sink="BT A2DP Headphones"
-                       sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
-                <route type="mix" sink="BT A2DP Speaker"
-                       sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
             </routes>
 
         </module>

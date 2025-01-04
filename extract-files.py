@@ -112,18 +112,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing("gettid: 1"),
     'vendor/etc/seccomp_policy/wfdhdcphalservice.policy': blob_fixup()
         .add_line_if_missing("gettid: 1"),
-    'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service': blob_fixup()
-       .add_needed("libstagefright_foundation-v33.so"),
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed(
             'libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'
         ),
-    'vendor/lib64/hw/audio.primary.parrot.so': blob_fixup()
-        .replace_needed("libstagefright_foundation.so", "libstagefright_foundation-v33.so"),
-    ('vendor/lib/libstagefright_soft_ac4dec.so', 'vendor/lib/libstagefright_soft_ddpdec.so', 'vendor/lib/libstagefrightdolby.so', 
-     'vendor/lib64/libdlbdsservice.so', 'vendor/lib64/libstagefright_soft_ac4dec.so', 'vendor/lib64/libstagefright_soft_ddpdec.so', 
-     'vendor/lib64/libstagefrightdolby.so'): blob_fixup()
-        .replace_needed("libstagefright_foundation.so", "libstagefright_foundation-v33.so"),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

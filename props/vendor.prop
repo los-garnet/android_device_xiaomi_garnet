@@ -18,7 +18,6 @@ ro.config.system_vol_steps=15
 ro.config.vc_call_vol_steps=11
 ro.vendor.audio.camera.loopback.support=false
 ro.vendor.audio.elus.enable=true
-ro.audio.spatializer_enabled=true
 ro.vendor.audio.feature.spatial=7
 ro.vendor.audio.gain.support=true
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
@@ -106,10 +105,6 @@ vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=0
 vendor.display.idle_time=0
 vendor.display.vds_allow_hwc=0
-
-# Dolby Atmos
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
