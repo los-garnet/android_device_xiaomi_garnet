@@ -1850,6 +1850,10 @@ vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
+# RIL - from Sky OS2.0.3.0.VMWINXM
+system_ext/priv-app/ims/ims.apk|fb9868575d9ad4456adf06e3cfb5f5b290b7337d
+system_ext/priv-app/QtiTelephony/QtiTelephony.apk|b80e1e063adabb802008c8427eda7f5780497ed6
+
 # RIL
 odm/etc/me_config.xml
 product/app/uimgbaservice/uimgbaservice.apk
@@ -1860,7 +1864,6 @@ product/framework/uimgbalibrary.jar
 product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 system_ext/app/ImsRcsService/ImsRcsService.apk
-system_ext/app/QtiTelephony/QtiTelephony.apk|e223a835f26e4c12e2b55950a2ab7325825303d4
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
@@ -1891,7 +1894,6 @@ system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/priv-app/ims/ims.apk
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/ATFWD-daemon
