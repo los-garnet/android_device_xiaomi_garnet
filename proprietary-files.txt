@@ -1,6 +1,7 @@
 # All unpinned blobs below are extracted from garnet OS2.0.2.0.VNRMIXM release-keys
 
 # Current blobs with ELF checks disabled:
+# audio.primary.garnet depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
 # libar-pal depends on libagmclient, which is a gnu makefile target
 # libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
@@ -93,7 +94,7 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.parrot.so;DISABLE_CHECKELF
+vendor/lib64/hw/audio.primary.parrot.so:vendor/lib64/hw/audio.primary.garnet.so;DISABLE_CHECKELF;FIX_SONAME
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
