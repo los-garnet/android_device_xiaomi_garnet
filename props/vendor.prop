@@ -17,6 +17,10 @@ ro.config.alarm_vol_steps=15
 ro.config.system_vol_steps=15
 ro.config.vc_call_vol_steps=11
 ro.vendor.audio.camera.loopback.support=false
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.eq.half=true
+ro.vendor.audio.dolby.surround.enable=true
+ro.vendor.audio.dolby.vision.support=true
 ro.vendor.audio.elus.enable=true
 ro.vendor.audio.feature.spatial=7
 ro.vendor.audio.gain.support=true
@@ -88,6 +92,7 @@ ro.soc.manufacturer=QTI
 # Display
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
+ro.vendor.display.dolbyvision.support=true
 vendor.display.comp_mask=0
 vendor.display.disable_3d_adaptive_tm=0
 vendor.display.disable_excl_rect=0
@@ -105,6 +110,10 @@ vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=0
 vendor.display.idle_time=0
 vendor.display.vds_allow_hwc=0
+
+# Dolby
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
@@ -163,6 +172,7 @@ ro.hardware.keystore_desede=true
 
 # Media
 debug.c2.use_dmabufheaps=1
+debug.config.media.video.dolby_vision_suports=true
 debug.stagefright.c2inputsurface=-1
 ro.media.xml_variant.profiles=_parrot_v0
 vendor.media.omx=0
