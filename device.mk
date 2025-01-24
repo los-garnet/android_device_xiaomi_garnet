@@ -58,28 +58,28 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.AGMIPC@1.0-service \
-    vendor.qti.hardware.pal@1.0-impl
+    vendor.qti.hardware.AGMIPC@1.0-service
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
+    audio.primary.parrot \
     audio.r_submix.default \
     audio.usb.default \
     sound_trigger.primary.parrot
 
 PRODUCT_PACKAGES += \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
-    libagmclient \
-    libagmmixer \
     libbatterylistener \
     libfmpal \
     libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndcardparser \
     libvolumelistener
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal

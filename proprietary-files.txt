@@ -1,9 +1,10 @@
 # All unpinned blobs below are extracted from garnet V816.0.17.0.UNRMIXM - miui_GARNETGlobal_OS1.0.17.0.UNRMIXM
 
 # Current blobs with ELF checks disabled:
-# libar-pal depends on libagmclient, which is a gnu makefile target
 # libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
+# libmcs depends on libar-acdb, libagm, libats, liblx-osal which are gnu makefile targets
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
+# libqtigefar depends on libar-pal, which is a gnu makefile target
 # libwfdmmsrc_proprietary depends on libwfdaac_vendor, which is a gnu makefile target
 
 # ACDB
@@ -88,27 +89,16 @@ vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/firmware/aw882xx_acf.bin
 vendor/firmware/fs19xx.fsm
 
-# Audio graph manager
-vendor/lib64/libagm.so
-vendor/lib64/libmisight.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;DISABLE_CHECKELF
-
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.parrot.so;DISABLE_CHECKELF
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
 vendor/lib64/libadsprpc.so
-vendor/lib64/libar-acdb.so
-vendor/lib64/libar-gpr.so
-vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so;DISABLE_CHECKELF
-vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioroute_ext.so
@@ -118,8 +108,6 @@ vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libfsalgocal.so;DISABLE_CHECKELF
 vendor/lib64/libkaraokepal.so;DISABLE_CHECKELF
-vendor/lib64/liblx-ar_util.so
-vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 vendor/lib64/libresampler.so
@@ -146,9 +134,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/lib_bt_aptx.so
-vendor/lib64/lib_bt_ble.so
-vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
