@@ -18,11 +18,6 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/lib64/libadsp_default_listener.so
-
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n31.bin
 vendor/lib/rfsa/adsp/bm2n32.bin
@@ -76,6 +71,11 @@ vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 vendor/lib/rfsa/adsp/misound_res_spk_fs.bin
 vendor/lib/rfsa/adsp/misound_res_spk_power_game.bin
 vendor/lib/rfsa/adsp/misound_res_spk_power_video.bin
+
+# ADSP
+vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
+vendor/lib64/libadsp_default_listener.so
 
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
@@ -243,6 +243,93 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
+
+# Camera firmware
+vendor/firmware/CAMERA_ICP.b00
+vendor/firmware/CAMERA_ICP.b01
+vendor/firmware/CAMERA_ICP.b02
+vendor/firmware/CAMERA_ICP.b03
+vendor/firmware/CAMERA_ICP.b04
+vendor/firmware/CAMERA_ICP.b05
+vendor/firmware/CAMERA_ICP.b06
+vendor/firmware/CAMERA_ICP.b07
+vendor/firmware/CAMERA_ICP.b08
+vendor/firmware/CAMERA_ICP.b09
+vendor/firmware/CAMERA_ICP.b10
+vendor/firmware/CAMERA_ICP.b11
+vendor/firmware/CAMERA_ICP.b12
+vendor/firmware/CAMERA_ICP.b13
+vendor/firmware/CAMERA_ICP.b14
+vendor/firmware/CAMERA_ICP.b15
+vendor/firmware/CAMERA_ICP.b16
+vendor/firmware/CAMERA_ICP.b17
+vendor/firmware/CAMERA_ICP.b18
+vendor/firmware/CAMERA_ICP.b19
+vendor/firmware/CAMERA_ICP.b20
+vendor/firmware/CAMERA_ICP.elf
+vendor/firmware/CAMERA_ICP.mbn
+vendor/firmware/CAMERA_ICP.mdt
+vendor/firmware/CAMERA_ICP_170.elf
+
+# Camera sensors
+vendor/lib64/camera/com.qti.actuator.garnet_aac_ov64b40_dw9800v_wide_i_actuator.so
+vendor/lib64/camera/com.qti.actuator.garnet_ofilm_s5khp3_gt9764ber_wide_ii_actuator.so
+vendor/lib64/camera/com.qti.actuator.garnet_sunny_s5khp3_gt9764ber_wide_i_actuator.so
+vendor/lib64/camera/com.qti.eeprom.garnet_aac_ov64b40_gt24p128e_wide_i_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_imx355_p24c64e_ultra_ii_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_ov02b10_gt24p64e_macro_ii_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_ov16a1q_gt24p64e_front_ii_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_s5k3p9sp04_gt24p64e_front_iiii_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_s5khp3_gt24p256h_wide_ii_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_sunny_imx355_p24c64f_ultra_i_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_sunny_ov02b10_gt24p64e_macro_i_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_sunny_ov16a1q_gt24p64e_front_i_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_sunny_s5k3p9sp04_gt24p64e_front_iii_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.garnet_sunny_s5khp3_p24c256f_wide_i_eeprom.so
+vendor/lib64/camera/com.qti.flash.lm3644.so
+vendor/lib64/camera/com.qti.sensor.garnet_aac_ov64b40_wide_i.so
+vendor/lib64/camera/com.qti.sensor.garnet_ofilm_imx355_ultra_ii.so
+vendor/lib64/camera/com.qti.sensor.garnet_ofilm_ov02b10_macro_ii.so
+vendor/lib64/camera/com.qti.sensor.garnet_ofilm_ov16a1q_front_ii.so
+vendor/lib64/camera/com.qti.sensor.garnet_ofilm_s5k3p9sp04_front_iiii.so
+vendor/lib64/camera/com.qti.sensor.garnet_ofilm_s5khp3_wide_ii.so
+vendor/lib64/camera/com.qti.sensor.garnet_sunny_imx355_ultra_i.so
+vendor/lib64/camera/com.qti.sensor.garnet_sunny_ov02b10_macro_i.so
+vendor/lib64/camera/com.qti.sensor.garnet_sunny_ov16a1q_front_i.so
+vendor/lib64/camera/com.qti.sensor.garnet_sunny_s5k3p9sp04_front_iii.so
+vendor/lib64/camera/com.qti.sensor.garnet_sunny_s5khp3_wide_i.so
+vendor/lib64/camera/com.qti.sensormodule.garnet_aac_ov64b40_wide_i.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_imx355_ultra_ii.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_ov02b10_macro_ii.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_ov16a1q_front_ii.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_s5k3p9sp04_front_iiii.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_s5khp3_wide_ii.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_imx355_ultra_i.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_ov02b10_macro_i.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_ov16a1q_front_i.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_s5k3p9sp04_front_iii.bin
+vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_s5khp3_wide_i.bin
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.garnet_aac_ov64b40_wide_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_imx355_ultra_global_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_imx355_ultra_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov02b10_macro_global_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov02b10_macro_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov16a1q_front_global_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov16a1q_front_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_s5k3p9sp04_front_iiii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_s5khp3_wide_global_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_ofilm_s5khp3_wide_ii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_imx355_ultra_global_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_imx355_ultra_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov02b10_macro_global_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov02b10_macro_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov16a1q_front_global_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov16a1q_front_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5k3p9sp04_front_iii.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5khp3_wide_global_i.bin
+vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5khp3_wide_i.bin
+vendor/lib64/hw/com.qti.chi.override.so
 
 # Camera
 odm/etc/camera/camerabooster.json
@@ -883,6 +970,7 @@ vendor/lib64/libcom.xiaomi.mawutils.so
 vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libdeflicker.so
+vendor/lib64/libdlrmsc.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhme.so
 vendor/lib64/libhta_hexagon_runtime_snpe.so
@@ -941,7 +1029,6 @@ vendor/lib64/libquickcamera.so
 vendor/lib64/librelight_only.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
-vendor/lib64/libdlrmsc.so
 vendor/lib64/libsfeShiftExtrapolation.so
 vendor/lib64/libsupermoon.so
 vendor/lib64/libswregistrationalgo.so
@@ -967,107 +1054,6 @@ vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so
-
-# Camera firmware
-vendor/firmware/CAMERA_ICP.b00
-vendor/firmware/CAMERA_ICP.b01
-vendor/firmware/CAMERA_ICP.b02
-vendor/firmware/CAMERA_ICP.b03
-vendor/firmware/CAMERA_ICP.b04
-vendor/firmware/CAMERA_ICP.b05
-vendor/firmware/CAMERA_ICP.b06
-vendor/firmware/CAMERA_ICP.b07
-vendor/firmware/CAMERA_ICP.b08
-vendor/firmware/CAMERA_ICP.b09
-vendor/firmware/CAMERA_ICP.b10
-vendor/firmware/CAMERA_ICP.b11
-vendor/firmware/CAMERA_ICP.b12
-vendor/firmware/CAMERA_ICP.b13
-vendor/firmware/CAMERA_ICP.b14
-vendor/firmware/CAMERA_ICP.b15
-vendor/firmware/CAMERA_ICP.b16
-vendor/firmware/CAMERA_ICP.b17
-vendor/firmware/CAMERA_ICP.b18
-vendor/firmware/CAMERA_ICP.b19
-vendor/firmware/CAMERA_ICP.b20
-vendor/firmware/CAMERA_ICP.elf
-vendor/firmware/CAMERA_ICP.mbn
-vendor/firmware/CAMERA_ICP.mdt
-vendor/firmware/CAMERA_ICP_170.elf
-
-# Camera sensors
-vendor/lib64/camera/com.qti.actuator.garnet_aac_ov64b40_dw9800v_wide_i_actuator.so
-vendor/lib64/camera/com.qti.actuator.garnet_ofilm_s5khp3_gt9764ber_wide_ii_actuator.so
-vendor/lib64/camera/com.qti.actuator.garnet_sunny_s5khp3_gt9764ber_wide_i_actuator.so
-vendor/lib64/camera/com.qti.eeprom.garnet_aac_ov64b40_gt24p128e_wide_i_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_imx355_p24c64e_ultra_ii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_ov02b10_gt24p64e_macro_ii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_ov16a1q_gt24p64e_front_ii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_s5k3p9sp04_gt24p64e_front_iiii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_ofilm_s5khp3_gt24p256h_wide_ii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_sunny_imx355_p24c64f_ultra_i_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_sunny_ov02b10_gt24p64e_macro_i_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_sunny_ov16a1q_gt24p64e_front_i_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_sunny_s5k3p9sp04_gt24p64e_front_iii_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.garnet_sunny_s5khp3_p24c256f_wide_i_eeprom.so
-vendor/lib64/camera/com.qti.flash.lm3644.so
-vendor/lib64/camera/com.qti.sensor.garnet_aac_ov64b40_wide_i.so
-vendor/lib64/camera/com.qti.sensor.garnet_ofilm_imx355_ultra_ii.so
-vendor/lib64/camera/com.qti.sensor.garnet_ofilm_ov02b10_macro_ii.so
-vendor/lib64/camera/com.qti.sensor.garnet_ofilm_ov16a1q_front_ii.so
-vendor/lib64/camera/com.qti.sensor.garnet_ofilm_s5k3p9sp04_front_iiii.so
-vendor/lib64/camera/com.qti.sensor.garnet_ofilm_s5khp3_wide_ii.so
-vendor/lib64/camera/com.qti.sensor.garnet_sunny_imx355_ultra_i.so
-vendor/lib64/camera/com.qti.sensor.garnet_sunny_ov02b10_macro_i.so
-vendor/lib64/camera/com.qti.sensor.garnet_sunny_ov16a1q_front_i.so
-vendor/lib64/camera/com.qti.sensor.garnet_sunny_s5k3p9sp04_front_iii.so
-vendor/lib64/camera/com.qti.sensor.garnet_sunny_s5khp3_wide_i.so
-vendor/lib64/camera/com.qti.sensormodule.garnet_aac_ov64b40_wide_i.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_imx355_ultra_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_ov02b10_macro_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_ov16a1q_front_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_s5k3p9sp04_front_iiii.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_ofilm_s5khp3_wide_ii.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_imx355_ultra_i.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_ov02b10_macro_i.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_ov16a1q_front_i.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_s5k3p9sp04_front_iii.bin
-vendor/lib64/camera/com.qti.sensormodule.garnet_sunny_s5khp3_wide_i.bin
-vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.garnet_aac_ov64b40_wide_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_imx355_ultra_global_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_imx355_ultra_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov02b10_macro_global_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov02b10_macro_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov16a1q_front_global_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_ov16a1q_front_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_s5k3p9sp04_front_iiii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_s5khp3_wide_global_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_ofilm_s5khp3_wide_ii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_imx355_ultra_global_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_imx355_ultra_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov02b10_macro_global_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov02b10_macro_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov16a1q_front_global_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_ov16a1q_front_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5k3p9sp04_front_iii.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5khp3_wide_global_i.bin
-vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5khp3_wide_i.bin
-vendor/lib64/hw/com.qti.chi.override.so
-
-# Computer vision
-vendor/lib64/libcv_common.so
-vendor/lib64/libcvp2_1.so
-vendor/lib64/libeva.so
-vendor/lib64/libfastcrc.so
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
-vendor/lib64/libvideoutils.so
 
 # Computer vision firmware
 vendor/firmware/evass-lt-21.b00
@@ -1114,6 +1100,20 @@ vendor/firmware/evass.b18
 vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
+
+# Computer vision
+vendor/lib64/libcv_common.so
+vendor/lib64/libcvp2_1.so
+vendor/lib64/libeva.so
+vendor/lib64/libfastcrc.so
+vendor/lib64/libfastcvdsp_stub.so
+vendor/lib64/libfastcvopt.so
+vendor/lib64/libscveCommon.so
+vendor/lib64/libscveCommon_stub.so
+vendor/lib64/libscveObjectSegmentation.so
+vendor/lib64/libscveObjectTracker.so
+vendor/lib64/libscveObjectTracker_stub.so
+vendor/lib64/libvideoutils.so
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -1361,6 +1361,16 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
+# Graphics (Adreno firmware)
+vendor/firmware/a710_sqe.fw
+vendor/firmware/a710_zap.b00
+vendor/firmware/a710_zap.b01
+vendor/firmware/a710_zap.b02
+vendor/firmware/a710_zap.elf
+vendor/firmware/a710_zap.mbn
+vendor/firmware/a710_zap.mdt
+vendor/firmware/gmu_gen70000.bin
+
 # Graphics (Adreno)
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
@@ -1384,16 +1394,6 @@ vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
-
-# Graphics (Adreno firmware)
-vendor/firmware/a710_sqe.fw
-vendor/firmware/a710_zap.b00
-vendor/firmware/a710_zap.b01
-vendor/firmware/a710_zap.b02
-vendor/firmware/a710_zap.elf
-vendor/firmware/a710_zap.mbn
-vendor/firmware/a710_zap.mdt
-vendor/firmware/gmu_gen70000.bin
 
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
@@ -1465,6 +1465,12 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml
 vendor/lib64/vendor.qti.hardware.limits@1.0.so
 vendor/lib64/vendor.qti.hardware.limits@1.1.so
 
+# Media Config
+vendor/etc/media_codecs_parrot_v0.xml
+vendor/etc/media_codecs_performance_parrot_v0.xml
+vendor/etc/media_parrot_v0/video_system_specs.json
+vendor/etc/media_profiles_parrot_v0.xml
+
 # Media
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
@@ -1504,12 +1510,6 @@ vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
-
-# Media Config
-vendor/etc/media_codecs_parrot_v0.xml
-vendor/etc/media_codecs_performance_parrot_v0.xml
-vendor/etc/media_parrot_v0/video_system_specs.json
-vendor/etc/media_profiles_parrot_v0.xml
 
 # Mlipay
 vendor/app/MipayService/MipayService.apk
@@ -1642,7 +1642,7 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so|9663f4512a1e33956a
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so|db1ea124c0f42fcc1a814d69308d4f9522012e1b
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so|15a47e8d6f3746e3cb3baa91577f206a1089edd5
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so|ffccfde321f48e390c5af8d546e1c7cdf23f9152
-vendor/bin/qcc-trd|146a8d4ba56aebee8056f988159358943dc148c9|a92ef8c6452a8a7c6909b8f185ed959282349bb0
+vendor/bin/qcc-trd|a92ef8c6452a8a7c6909b8f185ed959282349bb0
 vendor/etc/init/init.qdmastats.rc|d7ddb87faaedd900f1756064fe756d50efed7ca9
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|459d506b20124520f5d650a7b30c9a490514a878
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE=vendor.qti.hardware.qccsyshal@1.0-vendor|ef866bab2186db1b2c09477e36fef20945fa671e
@@ -1717,18 +1717,18 @@ vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
+# QTI service tracker
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
+
 # QTI
 vendor/bin/init.qti.write.sh
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
-
-# QTI service tracker
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # RIL
 odm/etc/me_config.xml
@@ -1989,26 +1989,6 @@ vendor/lib64/jcos_nq_client-v1.so
 vendor/lib64/ls_nq_client-v1.so
 vendor/lib64/se_nq_extn_client-v1.so
 
-# Sensors
-vendor/bin/init.qcom.sensors.sh
-vendor/bin/sensors.qti
-vendor/bin/sscrpcd
-vendor/etc/init/init.vendor.ins.rc
-vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib64/libsensorslog.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_direct_channel_stub.so
-vendor/lib64/libsns_registry_skel.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libssc.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/libssccalapi@2.0.so
-vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.touch.detect.so
-
 # Sensors configs
 vendor/etc/sensor_diag.cfg
 vendor/etc/sensors/config/lightSensorConfig.json
@@ -2078,6 +2058,26 @@ vendor/etc/sensors/sns_reg_config
 # Sensors ultrasound
 vendor/lib64/libultrasound_notify.so
 vendor/lib64/sensors.ultrasoundproximity.so
+
+# Sensors
+vendor/bin/init.qcom.sensors.sh
+vendor/bin/sensors.qti
+vendor/bin/sscrpcd
+vendor/etc/init/init.vendor.ins.rc
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.sensors.qti.rc
+vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/lib64/libsensorslog.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsns_direct_channel_stub.so
+vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libssc.so
+vendor/lib64/libssc_default_listener.so
+vendor/lib64/libssccalapi@2.0.so
+vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.touch.detect.so
 
 # Soter
 vendor/app/SoterService/SoterService.apk
@@ -2200,10 +2200,6 @@ vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
 vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
 
-# WiFi
-vendor/bin/cnss-daemon
-vendor/etc/init/init.vendor.wlan.rc
-
 # WiFi Display
 system/framework/WfdCommon.jar
 system_ext/bin/wfdservice64
@@ -2274,6 +2270,10 @@ vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE=vendor.qti.hardware.wifidisplaysession@1.0-vendor
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# WiFi
+vendor/bin/cnss-daemon
+vendor/etc/init/init.vendor.wlan.rc
 
 # Widevine DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
