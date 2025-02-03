@@ -1244,13 +1244,6 @@ vendor/lib64/vendor.display.color@1.6.so|f9f914003858e641fd19d41676465167e5b2005
 vendor/lib64/vendor.display.color@1.7.so|982805fb0f7a68df6a796173d6d3bb24a7dbaa7a
 vendor/lib64/vendor.display.postproc@1.0.so|d4698e4d21e0a65611f2e508a841749447c71498
 
-# EMBMS
-vendor/bin/embmsslServer
-vendor/etc/init/init.embmssl_server.rc
-vendor/lib64/libembmsservice.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
-vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
-
 # ESE powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
