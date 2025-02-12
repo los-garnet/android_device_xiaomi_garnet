@@ -25,3 +25,8 @@ echo "Clone Audio AGM and PAL .."
 rm -rf hardware/qcom-caf/sm8450/audio/agm && rm -rf hardware/qcom-caf/sm8450/audio/pal
 git clone https://github.com/los-garnet/android_vendor_qcom_opensource_agm.git hardware/qcom-caf/sm8450/audio/agm
 git clone https://github.com/los-garnet/android_vendor_qcom_opensource_arpal-lx.git hardware/qcom-caf/sm8450/audio/pal
+
+# Sign
+echo "Sign build .."
+rm -rf vendor/lineage-priv/keys
+git clone https://github.com/los-garnet/vendor_lineage-priv_keys.git vendor/lineage-priv/keys
