@@ -268,7 +268,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.early_boot.sh \
     init.recovery.qcom.rc \
-    init.sim.restart.sh \
     init.target.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
