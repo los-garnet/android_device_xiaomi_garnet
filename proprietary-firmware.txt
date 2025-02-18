@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from garnet V816.0.17.0.UNRMIXM
+## are from garnet OS2.0.2.0.VNRMIXM
 
 abl.img;AB
 aop.img;AB

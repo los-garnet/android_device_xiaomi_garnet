@@ -22,8 +22,8 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 2312DRA50G
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="garnet_global-user 14 UKQ1.231003.002 V816.0.17.0.UNRMIXM release-keys" \
-    BuildFingerprint=Redmi/garnet_global/garnet:14/UKQ1.231003.002/V816.0.17.0.UNRMIXM:user/release-keys \
+    BuildDesc="garnet_global-user 15 AQ3A.240912.001 OS2.0.2.0.VNRMIXM release-keys" \
+    BuildFingerprint=Redmi/garnet_global/garnet:15/AQ3A.240912.001/OS2.0.2.0.VNRMIXM:user/release-keys \
     DeviceName=garnet \
     DeviceProduct=garnet_global
 
