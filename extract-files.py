@@ -84,8 +84,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'on charger', r'on property:init.svc.vendor.charger=running'),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
-    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
-        .regex_replace('.+dolby.+\n', ''),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
@@ -94,6 +92,9 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(rb'persist\.vendor\.radio\.poweron_opt', rb'persist.vendor.radio.poweron_ign'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
+    ('vendor/lib64/libstagefright_soft_ddpdec.so', 'vendor/lib64/libdlbdsservice.so', 'vendor/lib64/libstagefright_soft_ac4dec.so', 'vendor/lib64/libstagefrightdolby.so'): blob_fixup()
+        .patchelf_version('0_17_2')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),    
 }  # fmt: skip
 
 module = ExtractUtilsModule(
