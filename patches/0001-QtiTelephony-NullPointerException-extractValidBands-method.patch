@@ -1,0 +1,67 @@
+From 33d64d1ff37bf8d734b74bb2515570839a3e4b68 Mon Sep 17 00:00:00 2001
+From: kleidione Freitas <kleidione@gmail.com>
+Date: Wed, 19 Mar 2025 22:21:47 -0300
+Subject: [PATCH] QtiTelephony: prevent NullPointerException in
+ extractValidBands ([I)
+
+    Error: FATAL EXCEPTION: java.lang.NullPointerException: Attempt to get length of null array in extractValidBands.
+
+    A NullPointerException was being thrown in the extractValidBands method when attempting to get the length of a null array. This fix ensures that the array is checked for null before accessing its length, preventing the crash.
+
+    Changes:
+    - Added null check for the input array (p0) using `if-eqz p0, :return_empty_array`.
+    - Introduced a new label `:return_empty_array` to handle the null case.
+    - When p0 is null, the method now returns an empty array `new-array v0, v0, [I` instead of crashing.
+
+    This ensures that the method gracefully handles null input by returning an empty array, avoiding the NullPointerException.
+
+    Stacktrace:
+    E AndroidRuntime: FATAL EXCEPTION: main
+    E AndroidRuntime: Process: com.qti.phone, PID: 3249
+    E AndroidRuntime: java.lang.NullPointerException: Attempt to get length of null array
+    E AndroidRuntime:   at com.qti.phone.nruwbicon.NrUwbIconUtils.extractValidBands(NrUwbIconUtils.java:95)
+    E AndroidRuntime:   at com.qti.phone.nruwbicon.NrUwbConfigsController.getNrUltraWidebandIconBandsForNsa(NrUwbConfigsController.java:196)
+    E AndroidRuntime:   at com.qti.phone.nruwbicon.NrUwbConfigsController.createConfigEntityBySubId(NrUwbConfigsController.java:95)
+    E AndroidRuntime:   at com.qti.phone.nruwbicon.NrUwbConfigsController.handleNrUwbConfigsUpdate(NrUwbConfigsController.java:78)
+    E AndroidRuntime:   at com.qti.phone.nruwbicon.NrUwbConfigsController.handleMessage(NrUwbConfigsController.java:59)
+    E AndroidRuntime:   at android.os.Handler.dispatchMessage(Handler.java:106)
+    E AndroidRuntime:   at android.os.Looper.loopOnce(Looper.java:205)
+    E AndroidRuntime:   at android.os.Looper.loop(Looper.java:294)
+    E AndroidRuntime:   at android.app.ActivityThread.main(ActivityThread.java:8248)
+    E AndroidRuntime:   at java.lang.reflect.Method.invoke(Native Method)
+    E AndroidRuntime:   at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+    E AndroidRuntime:   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+
+Signed-off-by: Kleidione <kleidione@gmail.com>
+---
+ smali/com/qti/phone/nruwbicon/NrUwbIconUtils.smali | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/smali/com/qti/phone/nruwbicon/NrUwbIconUtils.smali b/smali/com/qti/phone/nruwbicon/NrUwbIconUtils.smali
+index 6c504f7..7ba99fb 100644
+--- a/smali/com/qti/phone/nruwbicon/NrUwbIconUtils.smali
++++ b/smali/com/qti/phone/nruwbicon/NrUwbIconUtils.smali
+@@ -124,6 +124,8 @@
+ .method public static extractValidBands([I)[I
+     .locals 8
+ 
++    if-eqz p0, :return_empty_array
++
+     .line 93
+     new-instance v0, Ljava/util/ArrayList;
+ 
+@@ -225,6 +227,11 @@
+ 
+     :cond_3
+     return-object p0
++
++    :return_empty_array
++    const/4 v0, 0x0
++    new-array v0, v0, [I
++    return-object v0
+ .end method
+ 
+ .method public static getRefreshTimerTypeFromString(Ljava/lang/String;)I
+-- 
+2.48.1
+
